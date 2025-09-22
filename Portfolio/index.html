@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jerby B. Calo - Software Engineer Portfolio"
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>John Angelo Tarroza | Full Stack Developer</title>
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-text">Angelo <span class="accent">T.</span></span>
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-menu" id="nav-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Toggle theme"
+            >
+              <i class="fas fa-sun" id="theme-icon"></i>
+            </button>
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+
+      <div class="hero-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-content">
+          <!-- Text Content Column -->
+          <div class="hero-text-column">
+            <div class="hero-text">
+              <p class="greeting">HELLO, I'M</p>
+              <h1 class="hero-name">John Angelo Tarroza</h1>
+              <h2 class="hero-title">
+                <span class="typing-text">Data Analyst</span>
+                <span class="cursor-blink">|</span>
+              </h2>
+              <p class="hero-description">
+               Full Stack Developer and Data Analyst — building accessible, performant interfaces.
+                Gathers, cleans, and studies data sets to help solve problems.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                  <span>Get In Touch</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <a
+                  href="./downloads/Resume.pdf"
+                  download
+                  class="btn btn-secondary"
+                >
+                  <span>Download CV</span>
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+
+              <div class="social-links">
+                <a
+                  href="https://github.com/JerbyCalo"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://x.com/JerbMush"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/mush.jerb/"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Content Column -->
+          <div class="hero-image-column">
+            <div class="hero-image">
+              <div class="profile-image">
+                <img
+                  src="./images/me.png"
+                  alt="Jerby B. Calo - Software Engineer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+
+        <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-text">
+            <div class="about-header">
+              <h3>I create digital experiences that make a difference</h3>
+              <button class="edit-btn" id="edit-about-btn">
+                <i class="fas fa-edit"></i>
+                <span>Edit</span>
+              </button>
+            </div>
+            <p>
+              With a solid foundation in Computer Science and hands-on
+              experience through internships at MGK Tech Solutions and JCC
+              Software, I've developed expertise in full-stack development,
+              database optimization, and modern web technologies.
+            </p>
+            <p>
+              My journey in software engineering has taught me the importance of
+              writing clean, efficient code and creating user-centered
+              solutions. I'm passionate about continuous learning and staying
+              updated with the latest industry trends.
+            </p>
+
+            <div class="save-confirmation" id="save-confirmation">
+              <i class="fas fa-check-circle"></i>
+              <span>Changes saved!</span>
+            </div>
+
+            <div class="stats">
+              <div class="stat-item">
+                <h4>3</h4>
+                <p>Projects Completed</p>
+              </div>
+              <div class="stat-item">
+                <h4>3+</h4>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat-item">
+                <h4>100%</h4>
+                <p>Client Satisfaction</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-skills">
+            <div class="skill-category">
+              <h4>Frontend Development</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Backend Development</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C++</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Tools & Technologies</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-icon">
+              <img src="./images/Java Logo.jpg" alt="Java" />
+            </div>
+            <h3>Java</h3>
+            <p>
+              Object-oriented programming, Spring Framework, enterprise
+              applications
+            </p>
+            <div class="skill-level">
+              <span class="level-text">2 Years Experience</span>
+              <div class="level-bar">
+                <div class="level-fill" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-icon">
+              <img src="./images/Python Logo.jpg" alt="Python" />
+            </div>
+            <h3>Python</h3>
+            <p>Django, Flask, data analysis, automation, web scraping</p>
+            <div class="skill-level">
+              <span class="level-text">2 Years Experience</span>
+              <div class="level-bar">
+                <div class="level-fill" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="skill-icon">
+              <img src="./images/C++ Logo.jpg" alt="C++" />
+            </div>
+            <h3>C++</h3>
+            <p>
+              System programming, algorithms, data structures, performance
+              optimization
+            </p>
+            <div class="skill-level">
+              <span class="level-text">2 Years Experience</span>
+              <div class="level-bar">
+                <div class="level-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="skill-icon">
+              <img src="./images/JavaScript Logo.jpg" alt="JavaScript" />
+            </div>
+            <h3>JavaScript</h3>
+            <p>ES6+, DOM manipulation, async programming, modern frameworks</p>
+            <div class="skill-level">
+              <span class="level-text">2 Years Experience</span>
+              <div class="level-bar">
+                <div class="level-fill" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+            <div class="skill-icon">
+              <img src="./images/React Logo.jpg" alt="React" />
+            </div>
+            <h3>React</h3>
+            <p>
+              Component architecture, hooks, state management, modern React
+              patterns
+            </p>
+            <div class="skill-level">
+              <span class="level-text">1 Year Experience</span>
+              <div class="level-bar">
+                <div class="level-fill" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+            <div class="skill-icon">
+              <img src="./images/HTML logo.jpg" alt="HTML5" />
+            </div>
+            <h3>HTML5</h3>
+            <p>
+              Semantic markup, accessibility, modern HTML APIs, SEO optimization
+            </p>
+            <div class="skill-level">
+              <span class="level-text">2 Years Experience</span>
+              <div class="level-bar">
+                <div class="level-fill" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="900">
+            <div class="skill-icon">
+              <img src="./images/CSS Logo.jpg" alt="CSS3" />
+            </div>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, animations, responsive design, CSS-in-JS</p>
+            <div class="skill-level">
+              <span class="level-text">2 Years Experience</span>
+              <div class="level-bar">
+                <div class="level-fill" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">My academic journey</p>
+        </div>
+
+        <div class="education-timeline" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="timeline-content">
+              <div class="education-card">
+                <div class="card-header">
+                  <div class="institution-logo">
+                    <img
+                      src="./images/college.jpg"
+                      alt="Caraga State University"
+                    />
+                  </div>
+                  <div class="card-info">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h4>Caraga State University | Main Campus</h4>
+                    <span class="period">2023 - depende</span>
+                    <span class="status honor">in progress</span>
+                  </div>
+                </div>
+                <div class="card-description">
+                  <p>
+                    Comprehensive study of computer science fundamentals,
+                    software engineering principles, and advanced programming
+                    concepts.
+                  </p>
+                  <div class="achievements">
+                    <span class="achievement"
+                      >Data Structures & Algorithms</span
+                    >
+                    <span class="achievement">Software Engineering</span>
+                    <span class="achievement">Database Systems</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+            <div class="timeline-content">
+              <div class="education-card">
+                <div class="card-header">
+                  <div class="institution-logo">
+                    <img
+                      src="./images/shs.jpg"
+                      alt="Agusan National High School"
+                    />
+                  </div>
+                  <div class="card-info">
+                    <h3>Science, Technology, Engineering, and Mathematics</h3>
+                    <h4>Agusan National High School | Senior High School</h4>
+                    <span class="period">2021 - 2023</span>
+                    <span class="status completed">With High Honor</span>
+                  </div>
+                </div>
+                <div class="card-description">
+                  <p>
+                    Specialized in STEM subjects with focus on mathematics,
+                    physics, chemistry, and basic programming.
+                  </p>
+                  <div class="achievements">
+                    <span class="achievement">Advanced Mathematics</span>
+                    <span class="achievement">Basic Programming</span>
+                    <span class="achievement">Research Methods</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+            <div class="timeline-content">
+              <div class="education-card">
+                <div class="card-header">
+                  <div class="institution-logo">
+                    <img
+                      src="./images/jhs.jpg"
+                      alt="Bayugan National Comprehensive High School"
+                    />
+                  </div>
+                  <div class="card-info">
+                    <h3>Junior High School</h3>
+                    <h4>Bayugan National Comprehensive High School</h4>
+                    <span class="period">2018 - 2021</span>
+                    <span class="status completed">With Honor</span>
+                  </div>
+                </div>
+                <div class="card-description">
+                  <p>
+                    Foundation education with strong performance in mathematics
+                    and science subjects.
+                  </p>
+                  <div class="achievements">
+                    <span class="achievement">Academic Excellence</span>
+                    <span class="achievement">Leadership</span>
+                    <span class="achievement">STEM Foundation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">My professional journey</p>
+        </div>
+
+        <div
+          class="experience-timeline"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="timeline-line"></div>
+
+          <div
+            class="experience-item"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <div class="timeline-marker">
+              <div class="marker-inner"></div>
+            </div>
+            <div class="experience-card">
+              <div class="card-header">
+                <div class="company-logo">
+                  <img src="./images/work.jpg" alt="JCC Software" />
+                </div>
+                <div class="job-info">
+                  <h3>Software Engineer Intern</h3>
+                  <h4>JCC Software</h4>
+                  <span class="period">May 2024 - Aug 2024</span>
+                </div>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Developed features in Python and Django for a cloud-based
+                    application
+                  </li>
+                  <li>
+                    Conducted comprehensive testing and resolved code
+                    inefficiencies
+                  </li>
+                  <li>
+                    Optimized database queries, resulting in 20% faster
+                    performance
+                  </li>
+                  <li>
+                    Contributed to code reviews and successful deployments
+                  </li>
+                </ul>
+                <div class="technologies">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="experience-item"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            <div class="timeline-marker">
+              <div class="marker-inner"></div>
+            </div>
+            <div class="experience-card">
+              <div class="card-header">
+                <div class="company-logo">
+                  <img src="./images/work.jpg" alt="MGK Tech Solutions" />
+                </div>
+                <div class="job-info">
+                  <h3>Software Development Intern</h3>
+                  <h4>MGK Tech Solutions</h4>
+                  <span class="period">Sep 2023 - Dec 2023</span>
+                </div>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>
+                    Contributed to web application development using HTML, CSS,
+                    and JavaScript
+                  </li>
+                  <li>
+                    Debugged and improved application functionality and user
+                    experience
+                  </li>
+                  <li>
+                    Conducted rigorous testing to ensure stability and
+                    performance
+                  </li>
+                  <li>
+                    Actively participated in team meetings and code reviews
+                  </li>
+                </ul>
+                <div class="technologies">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">A showcase of my work</p>
+        </div>
+
+        <div class="project-showcase" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/ShutteStats.png" alt="ShuttleStats Project" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://shuttlestats.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Live Demo</span>
+                  </a>
+                  <a
+                    href="https://github.com/JerbyCalo/ShuttleStats"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">ShuttleStats</h3>
+                <div class="project-status">
+                  <span class="status-badge">Live Project</span>
+                </div>
+              </div>
+
+              <p class="project-description">
+                A modern, full-stack badminton performance tracker designed for
+                players and coaches. Features real-time match statistics, player
+                analytics, and performance insights. Built with vanilla
+                JavaScript for optimal performance and deployed on Vercel for
+                global accessibility.
+              </p>
+
+              <div class="project-technologies">
+                <span class="tech-badge">Vanilla JavaScript</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">Vercel</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="https://shuttlestats.vercel.app/"
+                  target="_blank"
+                  class="btn btn-primary project-btn"
+                >
+                  <i class="fas fa-rocket"></i>
+                  <span>Launch Project</span>
+                </a>
+                <a
+                  href="https://github.com/JerbyCalo/ShuttleStats"
+                  target="_blank"
+                  class="btn btn-secondary project-btn"
+                >
+                  <i class="fab fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Portfolio Project Card -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-image">
+              <img
+                src="./portfolio-screenshot.png"
+                alt="Personal Portfolio Project"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://jerbycalo.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Live Demo</span>
+                  </a>
+                  <a
+                    href="https://github.com/JerbyCalo/Portfolio"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Personal Portfolio</h3>
+                <div class="project-status">
+                  <span class="status-badge active-badge">Active</span>
+                </div>
+              </div>
+
+              <p class="project-description">
+                A modern responsive portfolio website showcasing my skills,
+                experience, and projects. Built with HTML, CSS, and JavaScript
+                featuring dark/light theme toggle, glassmorphism design, smooth
+                animations, and mobile-responsive layout for optimal user
+                experience across all devices.
+              </p>
+
+              <div class="project-technologies">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">AOS Animation</span>
+                <span class="tech-badge">Vercel</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="https://jerbycalo.vercel.app/"
+                  target="_blank"
+                  class="btn btn-primary project-btn"
+                >
+                  <i class="fas fa-rocket"></i>
+                  <span>Launch Project</span>
+                </a>
+                <a
+                  href="https://github.com/JerbyCalo/Portfolio"
+                  target="_blank"
+                  class="btn btn-secondary project-btn"
+                >
+                  <i class="fab fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+
+        <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-info">
+            <div
+              class="contact-item"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Purok 12A, San Vicente<br />Butuan City, Agusan Del Norte</p>
+              </div>
+            </div>
+
+            <div
+              class="contact-item"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>+63 961 134 9174</p>
+              </div>
+            </div>
+
+            <div
+              class="contact-item"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>jerbyy03@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <h3>Follow Me</h3>
+              <div class="social-links">
+                <a
+                  href="https://github.com/JerbyCalo"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://x.com/JerbMush"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/mush.jerb/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="contact-form-container"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <form class="contact-form" id="contact-form">
+              <h3>Send me a message</h3>
+
+              <div class="form-group">
+                <input type="text" id="name" name="name" required />
+                <label for="name">Your Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="email" required />
+                <label for="email">Your Email</label>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" required />
+                <label for="subject">Subject</label>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <label for="message">Your Message</label>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Jerby B. Calo</h3>
+            <p>
+              Software Engineer passionate about creating innovative digital
+              solutions
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-social">
+            <a
+              href="https://github.com/JerbyCalo"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://x.com/JerbMush"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/mush.jerb/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Jerby B. Calo. All rights reserved.</p>
+          <p>Designed & Built with ❤️ by Jerby</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
