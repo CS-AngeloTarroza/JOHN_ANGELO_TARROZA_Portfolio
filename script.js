@@ -5,30 +5,7 @@ AOS.init({
   offset: 100,
 });
 
-// Loading screen
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-  setTimeout(() => {
-    loader.style.opacity = "0";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 500);
-  }, 1500);
-});
 
-// Custom cursor
-const cursor = document.querySelector(".cursor");
-const cursorFollower = document.querySelector(".cursor-follower");
-
-document.addEventListener("mousemove", (e) => {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
-
-  setTimeout(() => {
-    cursorFollower.style.left = e.clientX + "px";
-    cursorFollower.style.top = e.clientY + "px";
-  }, 100);
-});
 
 // Mobile menu toggle
 const hamburger = document.getElementById("hamburger");
@@ -106,10 +83,10 @@ backToTop.addEventListener("click", () => {
 // Typing animation
 const typingText = document.querySelector(".typing-text");
 const texts = [
-  "Software Engineer",
-  "Web Developer",
-  "Full Stack Developer",
-  "Tech Enthusiast",
+  "Software Engineering",
+  "Full Stack Development",
+  "Data Analysis",
+  "Machine Learning",
 ];
 let textIndex = 0;
 let charIndex = 0;
