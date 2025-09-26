@@ -1,6 +1,6 @@
 /* Modern Portfolio Styles - Dark Theme with Glassmorphism */
 
-/* CSS Variables for consistent theming */
+
 :root {
   /* Colors */
   --bg-primary: #0a0a0a;
@@ -2077,3 +2077,4 @@ section {
     padding: 0.4rem 0.8rem;
   }
 }
+
