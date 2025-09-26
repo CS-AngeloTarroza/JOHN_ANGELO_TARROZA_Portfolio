@@ -1,4 +1,4 @@
-// Initialize
+// Initialize aos
 AOS.init({
   duration: 1000,
   once: true,
@@ -231,4 +231,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeTheme();
   initializeEditableSection();
 });
+
 
