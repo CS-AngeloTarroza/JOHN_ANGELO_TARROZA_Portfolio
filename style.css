@@ -401,7 +401,7 @@ section {
 .hero-name {
   font-size: 3.5rem;
   font-weight: 900;
-  line-height: 0.9;
+  line-height: 1.3;
   margin-bottom: 1.9rem;
   background: var(--accent-gradient);
   background-clip: text;
@@ -2077,6 +2077,7 @@ section {
     padding: 0.4rem 0.8rem;
   }
 }
+
 
 
 
