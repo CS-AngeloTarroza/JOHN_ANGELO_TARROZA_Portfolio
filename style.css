@@ -393,7 +393,7 @@ section {
   color: var(--text-secondary);
   font-weight: 400;
   margin-bottom: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -2077,8 +2077,5 @@ section {
     padding: 0.4rem 0.8rem;
   }
 }
-
-
-
 
 
