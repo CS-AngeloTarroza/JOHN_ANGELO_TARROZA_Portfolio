@@ -579,6 +579,13 @@ section {
   transition: transform var(--transition-slow);
 }
 
+/* ...existing code... */
+.profile-light { display: none; }
+.profile-dark { display: block; }
+
+body.light-mode .profile-dark { display: none; }
+body.light-mode .profile-light { display: block; }
+/* ...existing code... */
 
 
 /* Responsive Hero */
