@@ -141,15 +141,30 @@ skillCards.forEach((card) => {
 });
 
 // Theme Toggle Functionality
+// ...existing code...
+
 function initializeTheme() {
   const savedTheme = localStorage.getItem("theme") || "dark";
   const body = document.body;
   const themeToggle = document.getElementById("theme-toggle");
   const themeIcon = document.getElementById("theme-icon");
 
+  // Profile images
+  const profileDark = document.querySelector('.profile-dark');
+  const profileLight = document.querySelector('.profile-light');
+
   // Apply saved theme
   body.setAttribute("data-theme", savedTheme);
   updateThemeIcon(savedTheme, themeIcon);
+
+  // Show correct profile image on load
+  if (savedTheme === "light") {
+    profileDark.style.display = "none";
+    profileLight.style.display = "block";
+  } else {
+    profileDark.style.display = "block";
+    profileLight.style.display = "none";
+  }
 
   // Theme toggle event listener
   themeToggle.addEventListener("click", () => {
@@ -159,8 +174,19 @@ function initializeTheme() {
     body.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
     updateThemeIcon(newTheme, themeIcon);
+
+    // Toggle profile images
+    if (newTheme === "light") {
+      profileDark.style.display = "none";
+      profileLight.style.display = "block";
+    } else {
+      profileDark.style.display = "block";
+      profileLight.style.display = "none";
+    }
   });
 }
+
+// ...existing code...
 
 function updateThemeIcon(theme, iconElement) {
   if (theme === "dark") {
