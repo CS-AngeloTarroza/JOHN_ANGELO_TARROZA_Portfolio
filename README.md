@@ -6,15 +6,15 @@
 
 ---
 
-## 🚀 About Me
-- 🎓 4th Year Computer Science
-- 🔗 Interested in Software Engineering, Machine Learning, AI, and Data Analysis
-- 🌱 Currently learning: Cloud technologies & DevOps
-- 🏆 Always open to collaboration and new projects
+##  About Me
+-  Computer Science Graduate
+-  Interested in Software Engineering, Machine Learning, AI, and Data Analysis
+-  Currently learning: Cloud technologies & DevOps
+-  Always open to collaboration and new projects
 
 ---
 
-## 🛠️ Skills & Tools
+##  Skills & Tools
 
 ### Languages
 <p>
