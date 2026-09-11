@@ -1,7 +1,7 @@
 <!-- Profile Header -->
 <h1 align="center">Hi there 👋 I'm Angelo Tarroza</h1>
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=400&center=true&width=435&lines=4TH+Year+Computer+Science+Student;Interested+in;Software+Engineering;Machine+Learning+and+AI;Data+Analysis;Full+Stack+Development;Cloud+Computing" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=400&center=true&width=435&lines=Computer+Science;Interested+in;Software+Engineering;Machine+Learning+and+AI;Data+Analysis;Full+Stack+Development;Cloud+Computing" alt="Typing SVG" />
 </p>
 
 ---
