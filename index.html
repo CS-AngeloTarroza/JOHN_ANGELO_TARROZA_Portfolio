@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>John Angelo Tarroza</title>
-<meta name="description" content="John Angelo Tarroza — CS graduate in Metro Manila, building web apps and turning data into insight." />
+<title>John Angelo Tarroza — Full Stack Developer</title>
+<meta name="description" content="John Angelo Tarroza — full stack developer and CS graduate in Metro Manila, building web apps and turning data into insight." />
 <meta name="theme-color" content="#0a0a0a" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,11 +102,16 @@
   .theme-switch button[aria-pressed="true"]{background:var(--ink);color:var(--bg);}
   .theme-switch svg{width:14px;height:14px;}
 
-  .nav-toggle{display:none;background:none;border:1px solid var(--border);color:var(--ink);border-radius:6px;padding:6px 10px;font-size:13px;flex:none;}
+  .nav-toggle{
+    display:none;background:none;border:1px solid var(--border);color:var(--ink);
+    border-radius:6px;width:34px;height:34px;flex:none;align-items:center;justify-content:center;
+    padding:0;cursor:pointer;
+  }
+  .nav-toggle svg{width:18px;height:18px;}
   .mobile-links{display:none;}
   @media (max-width:680px){
     .nav-links > a{display:none;}
-    .nav-toggle{display:inline-block;}
+    .nav-toggle{display:flex;}
     .mobile-links{
       position:fixed;top:57px;left:0;right:0;background:var(--bg);
       flex-direction:column;padding:16px 24px;border-bottom:1px solid var(--border);
@@ -398,7 +403,9 @@
         </div>
       </div>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">Menu</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
   </div>
   <div class="mobile-links" id="mobileLinks">
     <a href="#about">About</a>
@@ -418,7 +425,7 @@
       <span id="localTime"></span>
     </div>
     <h1 class="reveal">John Angelo Tarroza</h1>
-    <p class="role reveal">Fresh Grad, <span class="u">interested in emerging tech</span></p>
+    <p class="role reveal">Full-stack developer, <span class="u">interested in data analysis</span></p>
     <p class="bio reveal">Computer Science graduate who builds complete web solutions — intuitive front-ends backed by reliable systems — and enjoys turning raw data into insight that's actually useful.</p>
     <div class="hero-actions reveal">
       <a class="btn btn-primary" href="#contact">Get in touch</a>
